@@ -1,8 +1,61 @@
 //Biblioteca en Kotlin by Joel Jara
-import biblioteca.Libro
-import biblioteca.Socio
-import biblioteca.Prestamo
 import java.util.Scanner
+
+class Libro(var titulo: String, var autor: String, var ejemplaresDisponibles: Int) {
+
+    fun prestar() {
+        if (ejemplaresDisponibles > 0) {
+            ejemplaresDisponibles--
+            println("Libro prestado: $titulo, Autor: $autor")
+        } else {
+            println("No hay ejemplares disponibles de $titulo")
+        }
+    }
+
+    fun devolver() {
+        ejemplaresDisponibles++
+        println("Libro devuelto: $titulo, Autor: $autor")
+    }
+
+    fun informacion() {
+        println("Título: $titulo, Autor: $autor, Ejemplares disponibles: $ejemplaresDisponibles")
+    }
+}
+
+class Socio(var nombre: String, var apellido: String, var numeroSocio: Int) {
+
+    fun solicitarPrestamo(libro: Libro, fechaPrestamo: String) {
+        println("Préstamo solicitado por $nombre $apellido, Número de Socio: $numeroSocio")
+        val prestamo = Prestamo(libro, this)
+        prestamo.registrarPrestamo(fechaPrestamo)
+    }
+
+    fun devolverPrestamo(libro: Libro) {
+        println("Devolución de préstamo por $nombre $apellido, Número de Socio: $numeroSocio")
+        val prestamo = Prestamo(libro, this)
+        prestamo.devolverPrestamo()
+    }
+
+    fun informacion() {
+        println("Nombre: $nombre, Apellido: $apellido, Número de Socio: $numeroSocio")
+    }
+}
+
+class Prestamo(val libro: Libro, val socio: Socio) {
+    fun registrarPrestamo(fechaPrestamo: String) {
+        println("Préstamo registrado - Libro: ${libro.titulo}, Socio: ${socio.nombre} ${socio.apellido}, Fecha: $fechaPrestamo")
+        libro.prestar()
+    }
+
+    fun devolverPrestamo() {
+        println("Devolución de préstamo - Libro: ${libro.titulo}, Socio: ${socio.nombre} ${socio.apellido}")
+        libro.devolver()
+    }
+
+    fun informacion() {
+        println("Libro: ${libro.titulo}, Socio: ${socio.nombre} ${socio.apellido}")
+    }
+}
 
 class App {
     fun exec() {
