@@ -8,10 +8,10 @@ public class MainApp {
 
     public static void main(String[] args) {
         Fantasma[] fantasmas = {
-            new Fantasma(0,0,"Pinky"),
-            new Fantasma(1,0,"Inky"),
-            new Fantasma(2,0,"Blinky"),
-            new Fantasma(3,0,"Clyde")
+            new Fantasma(0,0,"Pinky","Rosa","Dona"),
+            new Fantasma(1,0,"Inky","Blau","Home"),
+            new Fantasma(2,0,"Blinky","Vermell","Dona"),
+            new Fantasma(3,0,"Clyde","Taronja","Home")
         };
 
         System.out.println("Aquests són els fantasmes que volen lluitar contra Pac-Man:\n");
