@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personatges>
+    <personatge>
+        <nom>Gandalf</nom>
+        <nivell>10</nivell>
+        <vida>100</vida>
+        <mana>150</mana>
+        <arma>Gràvida de llum</arma>
+        <atac>30</atac>
+        <armadura>Roba de mag</armadura>
+        <defensa>15</defensa>
+    </personatge>
+    <personatge>
+        <nom>Aragorn</nom>
+        <nivell>8</nivell>
+        <vida>120</vida>
+        <mana>80</mana>
+        <arma>Espasa Màgica</arma>
+        <atac>40</atac>
+        <armadura>Armadura de Ferro</armadura>
+        <defensa>25</defensa>
+    </personatge>
+    <personatge>
+        <nom>Legolas</nom>
+        <nivell>9</nivell>
+        <vida>110</vida>
+        <mana>100</mana>
+        <arma>Arco Élfico</arma>
+        <atac>35</atac>
+        <armadura>Túnica Élfica</armadura>
+        <defensa>20</defensa>
+    </personatge>
+    <personatge>
+        <nom>Frodo</nom>
+        <nivell>5</nivell>
+        <vida>80</vida>
+        <mana>50</mana>
+        <arma>Daga de Morgul</arma>
+        <atac>20</atac>
+        <armadura>Manto de Hobbit</armadura>
+        <defensa>10</defensa>
+    </personatge>
+</personatges>
