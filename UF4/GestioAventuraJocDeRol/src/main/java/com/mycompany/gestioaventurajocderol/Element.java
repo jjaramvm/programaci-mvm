@@ -46,6 +46,9 @@ public class Element {
         this.valor = valor;
     }
     
-    
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Tipus: " + tipus + ", Descripció: " + descripcio + ", Valor: " + valor;
+    }
 
 }

@@ -13,6 +13,8 @@ public class GestorElements {
         elements[4] = new Element("Bala de Plata", "Munició", "Una bala especial feta de plata per enfrontar-se a les criatures de la nit", 5);
         elements[5] = new Element("Capa d'Invisibilitat", "Objecte Màgic", "Una capa que et fa invisible a ulls dels enemics", 30);
 
+        
+        System.out.println("Llista d'elements disponibles al joc:\n");
         // Recorrem l'array d'elements i els imprimim
         for (Element element : elements) {
             System.out.println(element);
