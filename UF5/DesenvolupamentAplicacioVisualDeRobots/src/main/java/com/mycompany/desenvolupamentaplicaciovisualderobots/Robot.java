@@ -85,7 +85,11 @@ public class Robot {
     }
 
     private void imprimirEstat() {
-        System.out.println("Posició: (" + x + ", " + y + "), Direcció: " + direccio);
+        System.out.println(getEstat());
+    }
+
+    public String getEstat() {
+        return "Posició: (" + x + ", " + y + "), Direcció: " + direccio;
     }
 
     public void desaEstat(String filename) throws IOException {
