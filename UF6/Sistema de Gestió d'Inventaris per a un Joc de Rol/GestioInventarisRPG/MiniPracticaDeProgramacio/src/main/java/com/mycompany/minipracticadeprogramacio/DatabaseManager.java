@@ -28,7 +28,7 @@ public class DatabaseManager
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                return new Book(rs.getInt("id"), rsgetString("Title"), rs.getString("Title"), rs.getString("Author"),rs.getString("Editorial"), rs.getInt("Stock"));
+                return new Book(rs.getInt("id"), rs.getString("Title"), rs.getString("Title"), rs.getString("Author"),rs.getString("Editorial"), rs.getInt("Stock"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
